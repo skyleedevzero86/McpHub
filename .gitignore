@@ -1,24 +1,190 @@
-# Nestjs specific
-/dist
-/node_modules
-/build
-/tmp
+# ===================================
+# OS - macOS
+# ===================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
-# Logs
+# ===================================
+# OS - Windows
+# ===================================
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# ===================================
+# OS - Linux
+# ===================================
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===================================
+# Editors / IDEs
+# ===================================
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.vsix
+
+# JetBrains (WebStorm, IntelliJ 등)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Cursor / Windsurf / Zed
+.cursor/
+.windsurf/
+.zed/
+
+# Sublime / Vim / Emacs
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+# ===================================
+# Node.js (공통)
+# ===================================
+node_modules/
+jspm_packages/
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+.pnpm-store/
+package-lock.json.bak
+
+# 로그
 logs
 *.log
 npm-debug.log*
-pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 lerna-debug.log*
 
-# dotenv environment variable files
+# 테스트 / 커버리지
+coverage/
+*.lcov
+.nyc_output
+.jest-cache/
+
+# ===================================
+# 환경변수 / 시크릿
+# ===================================
 .env
+.env.local
+.env.*.local
 .env.development
 .env.test
 .env.production
+*.pem
+*.key
+*.crt
 
-# temp directory
+# ===================================
+# NestJS (백엔드)
+# ===================================
+dist/
+build/
+tmp/
+temp/
+.tsbuildinfo
+*.tsbuildinfo
+
+# ===================================
+# Next.js
+# ===================================
+.next/
+out/
+next-env.d.ts
+
+# ===================================
+# Nuxt.js / Vue.js
+# ===================================
+.nuxt/
+.output/
+.nitro/
+.cache/
+.vite/
+.vue-storefront/
+
+# ===================================
+# SvelteKit / Svelte
+# ===================================
+.svelte-kit/
+.svelte/
+
+# ===================================
+# React (CRA / Vite)
+# ===================================
+.eslintcache
+.parcel-cache/
+.turbo/
+.rollup.cache/
+
+# ===================================
+# 기타 빌드 도구
+# ===================================
+.docusaurus
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.webpack/
+
+# ===================================
+# DB / 업로드
+# ===================================
+*.sqlite
+*.sqlite3
+*.db
+uploads/
+storage/
+
+# ===================================
+# 기타
+# ===================================
+*.tgz
+*.tar.gz
+.cache
 .temp
-.tmp
